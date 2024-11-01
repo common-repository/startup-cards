@@ -1,0 +1,841 @@
+@font-face {
+	font-family: Inter-Regular;
+	src: url(https://plugins.svn.wordpress.org/startup-cards/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+	font-family: Inter-Medium;
+	src: url(https://plugins.svn.wordpress.org/startup-cards/assets/fonts/Inter-Medium.ttf);
+}
+@font-face {
+	font-family: Inter-SemiBold;
+	src: url(https://plugins.svn.wordpress.org/startup-cards/assets/fonts/Inter-SemiBold.ttf);
+}
+@font-face {
+	font-family: Inter-Bold;
+	src: url(https://plugins.svn.wordpress.org/startup-cards/assets/fonts/Inter-Bold.ttf);
+}
+
+@media only screen and (max-width: 414px) {
+	.startupcards-main {
+		width: 330px;
+	}
+	.startupcards-main-withcredits {
+		width: 330px;
+	}
+	.startupcards-dark-main {
+		width: 330px;
+	}
+	.startupcards-dark-main-withcredits {
+		width: 330px;
+	}
+}
+
+@media only screen and (min-width: 414px) {
+	.startupcards-main {
+		width: 375px;
+	}
+	.startupcards-main-withcredits {
+		width: 375px;
+	}
+	.startupcards-dark-main {
+		width: 375px;
+	}
+	.startupcards-dark-main-withcredits {
+		width: 375px;
+	}
+}
+
+.startupcards-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.startupcards-main {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	height: 620px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 16px rgba(138, 156, 183, 0.25);
+}
+
+.startupcards-main-withcredits {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	height: 705px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 16px rgba(138, 156, 183, 0.25);
+}
+
+.startupcards-top-container {
+	position: relative;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.startupcards-last-updated-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.startupcards-indicator-green {
+	height: 9px;
+	width: 9px;
+	background: #00ae42;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.startupcards-indicator-yellow {
+	height: 9px;
+	width: 9px;
+	background: #e7b416;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.startupcards-indicator-red {
+	height: 9px;
+	width: 9px;
+	background: #cc3232;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.startupcards-last-updated-text {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: #68717a;
+}
+/* Last updated end */
+
+.startupcards-org-details-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 20px;
+}
+.startupcards-logo {
+	height: 68px;
+	width: 68px;
+	border-radius: 50%;
+	margin-right: 10px;
+	filter: drop-shadow(0px 4px 16px rgba(138, 156, 183, 0.25));
+}
+
+.startupcards-organization {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: Inter-Bold, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	color: #152536;
+}
+
+.startupcards-founded-date {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #6c757d;
+}
+
+.startupcards-flag {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	margin-left: 10px;
+}
+
+/* logo section end */
+
+.startupcards-industries-container {
+	margin-top: 20px;
+}
+
+.startupcards-industries-chips-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.startupcards-industries-label {
+	margin-bottom: 10px;
+	color: #152536;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.startupcards-no-industries {
+	font-family: Inter-Medium;
+	color: #152536;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.startupcards-industry-chip {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-align: center;
+	text-transform: capitalize;
+	border-radius: 3px;
+	background-color: #f8f9fa;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+	margin-right: 4px;
+	color: #68717a;
+}
+/* end industries section */
+/* end top section */
+
+.startupcards-middle-container {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.startupcards-tab-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-bottom: 1px solid #ced5dc;
+}
+.startupcards-tab {
+	animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeEffect {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.startupcards--tab {
+	flex-basis: 50%;
+	text-align: center;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid;
+	padding-bottom: 10px;
+	cursor: pointer;
+	font-family: Inter-Medium;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.startupcards-active-tab {
+	color: #0d6efd;
+	border-bottom: 3px solid #0d6efd !important;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+}
+/* tab buttons end */
+
+.startupcards-total-funding-amount-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.startupcards-total-funding-amount-title {
+	margin-bottom: 10px;
+	color: #152536;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.startupcards-total-funding-amount-value {
+	color: #0d6efd;
+	font-family: Inter-Bold, Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 34px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+.startupcards-no-total-funding-amount {
+	font-family: Inter-Regular, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 13px;
+	letter-spacing: 0em;
+	text-align: center;
+	background-color: #ffe69c;
+	color: #664d03;
+	border-radius: 4px;
+	border: 1px solid #ffe69c;
+	width: 95%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.startupcards-total-funding-amount-placeholder {
+	width: 100%;
+	margin-top: 15px;
+	height: 35px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+/* total funding amount end */
+
+.startupcards-current-stage-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 3px solid #0d6efd;
+	border-radius: 16px;
+	margin-top: 15px;
+	height: 75px;
+	box-shadow: 0px 4px 16px rgba(138, 156, 183, 0.25);
+}
+
+.startupcards-current-stage {
+	flex-basis: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 20px;
+	color: #0d6efd;
+	font-family: Inter-Bold, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.startupcards-current-stage-label-date-wrapper {
+	flex-basis: 50%;
+	padding-left: 20px;
+}
+.startupcards-current-stage-label {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	color: #152536;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.startupcards-current-stage-date {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #6c757d;
+}
+
+/* start no current stage data */
+.startupcards-no-current-stage {
+	flex-basis: 50%;
+	width: 45%;
+	height: 19px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	margin-left: 20px;
+}
+
+.startupcards-no-current-stage-label-date-wrapper {
+	flex-basis: 50%;
+	padding-left: 20px;
+}
+.startupcards-no-current-stage-label {
+	width: 85%;
+	height: 16px;
+	background: #f8f9fa;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.startupcards-no-current-stage-date {
+	width: 85%;
+	height: 16px;
+	background: #f8f9fa;
+	border-radius: 8px;
+}
+
+.startup-cards-no-current-stage-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 16px;
+	margin-top: 15px;
+	height: 75px;
+	box-shadow: 0px 4px 16px rgba(138, 156, 183, 0.25);
+	background-color: #fff;
+}
+/* current stage end */
+
+.startupcards-previous-funding-stages {
+	margin-top: 20px;
+}
+
+.startupcards-previous-funding-stages-card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	box-shadow: 0px 4px 16px rgba(138, 156, 183, 0.25);
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 16px;
+}
+.startupcards-previous-funding-stages-image {
+	width: 19px;
+	height: 24px;
+}
+.startupcards-previous-funding-stages-image-wrapper {
+	flex-basis: 24%;
+	display: flex;
+	justify-content: center;
+}
+.startupcards-previous-funding-stages-funding-type {
+	flex-basis: 45%;
+	color: #152536;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: right;
+	padding-right: 20px;
+}
+.startupcards-previous-funding-stages-dot-wrapper {
+	flex-basis: 6%;
+	display: flex;
+	align-items: flex-start;
+}
+.startupcards-previous-funding-stages-dot {
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: #687684;
+}
+.startupcards-previous-funding-stages-date {
+	flex-basis: 30%;
+	color: #6c757d;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}
+
+/* previous funding stages end */
+/* middle section end */
+.startupcards-bottom-container {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.startupcards-footer-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f8f9fa;
+	border-radius: 16px;
+	margin: 20px;
+	overflow: hidden;
+}
+.startupcards-footer-left-section {
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.startupcards-footer-right-section {
+	padding-right: 10px;
+	padding-top: 6px;
+	padding-bottom: 5px;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+.startupcards-footer-credits {
+	font-family: Inter-SemiBold, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	color: #adb5bd;
+	text-align: left;
+	text-decoration: none;
+}
+.startupcards-footer-interesante-logo {
+	height: auto;
+	width: 123px;
+	object-fit: contain;
+	image-rendering: crisp-edges;
+	image-rendering: -moz-crisp-edges; /* Firefox */
+	image-rendering: -o-crisp-edges; /* Opera */
+	image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+	-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+.startupcards-credits-link {
+	text-decoration: none;
+	cursor: pointer;
+}
+.startupcards-footer-button {
+	background-color: #0d6efd;
+	color: #ffffff !important;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	font-family: Inter-SemiBold, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+/* end bottom panel */
+
+.startupcards-founders-header,
+.startupcards-investors-header {
+	color: #152536;
+	font-family: Inter-SemiBold, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: left;
+}
+
+.startupcards-founders-section {
+	margin-top: 20px;
+}
+
+.startupcards-founders-list {
+	columns: 2;
+	list-style: none;
+	text-align: left;
+}
+
+ol.startupcards-founders-list > li:before {
+	content: url(https://plugins.svn.wordpress.org/startup-cards/assets/images/hyphen.png);
+	position: relative;
+	bottom: 4px;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.startupcards-investor-name,
+.startupcards-founder-name {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	color: #6c757d;
+}
+.startupcards-investors-list {
+	columns: 2;
+	list-style: none;
+	text-align: left;
+}
+
+ol.startupcards-investors-list > li:before {
+	content: url(https://plugins.svn.wordpress.org/startup-cards/assets/images/hyphen.png);
+	position: relative;
+	bottom: 4px;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.overflow-class {
+	display: none;
+	height: 360px;
+	margin-top: 5px;
+	-ms-overflow-style: none;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.overflow-class-withcredits {
+	display: none;
+	height: 390px;
+	margin-top: 5px;
+	-ms-overflow-style: none;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* width */
+.startupcards-tab::-webkit-scrollbar {
+	/* hide scrollbar but allow scrolling */
+	/* display: none; */
+	width: 3px;
+}
+
+/* Track */
+.startupcards-tab::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+/* Handle */
+.startupcards-tab::-webkit-scrollbar-thumb {
+	background: #ddd;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+.startupcards-tab::-webkit-scrollbar-thumb:hover {
+	background: #0d6efd;
+}
+
+/* no data */
+.startupcards-no-data-wrapper {
+	background-color: #f0f4f8;
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.startupcards-no-data {
+	font-size: 20px;
+	color: #434c51;
+	font-family: Inter-SemiBold, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+
+/* Dark theme styles */
+.startupcards-dark-main-withcredits {
+	position: relative;
+	background-color: #121212;
+	border: 1px solid #1e1e1e;
+	height: 705px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 16px rgb(0 0 0 / 25%);
+}
+.startupcards-dark-main {
+	position: relative;
+	background-color: #121212;
+	border: 1px solid #1e1e1e;
+	height: 620px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 16px rgb(0 0 0 / 25%);
+}
+.startupcards-dark-previous-funding-stages-card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	box-shadow: 0px 4px 16px rgb(0 0 0 / 25%);
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 16px;
+	background: #1e1e1e;
+}
+.startupcards-dark-previous-funding-stages-funding-type {
+	flex-basis: 45%;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.startupcards-dark-previous-funding-stages-date {
+	flex-basis: 30%;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}
+
+.startupcards-dark-current-stage-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border: 3px solid #0d6efd;
+	border-radius: 16px;
+	margin-top: 15px;
+	height: 75px;
+	box-shadow: 0px 4px 16px rgb(0 0 0 / 25%);
+	background-color: #1e1e1e;
+}
+.startupcards-dark-current-stage-label {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	color: #eaeaea;
+	font-size: 16px;
+	line-height: 19px;
+}
+.startupcards-dark-current-stage-date {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #eaeaea;
+}
+.startupcards-dark-total-funding-amount-title {
+	margin-bottom: 10px;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+.startupcards-dark-tab {
+	background-color: #1e1e1e;
+	border-bottom: 3px solid #1e1e1e;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+.startupcards-light-tab {
+	background-color: #ffffff;
+	border-bottom: 3px solid #ffffff;
+	color: #687684;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+.startupcards-dark-tab-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border-bottom: 1px solid #1e1e1e;
+}
+.startupcards-dark-industry-chip {
+	font-size: 12px;
+	text-align: center;
+	text-transform: capitalize;
+	border-radius: 3px;
+	background-color: #1e1e1e;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-bottom: 10px;
+	margin-right: 4px;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+.startupcards-dark-industries-label {
+	margin-bottom: 10px;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
+.startupcards-dark-organization {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: Inter-Bold, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	color: #eaeaea;
+}
+.startupcards-dark-founded-date {
+	font-size: 14px;
+	line-height: 24px;
+	color: #eaeaea;
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+.startupcards-dark-last-updated-text {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: #eaeaea;
+}
+.startupcards-dark-founders-header,
+.startupcards-dark-investors-header {
+	color: #eaeaea;
+	font-family: Inter-SemiBold, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: left;
+}
+.startupcards-dark-investor-name,
+.startupcards-dark-founder-name {
+	font-family: Inter-Medium, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	color: #eaeaea;
+}
+.startupcards-dark-footer-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1e1e1e;
+	border-radius: 16px;
+	margin: 20px;
+	overflow: hidden;
+}
+.startupcards-dark-footer-credits {
+	font-size: 12px;
+	line-height: 15px;
+	color: #eaeaea;
+	font-family: Inter-SemiBold, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	text-align: left;
+	text-decoration: none;
+}
+/* Dark theme styles end */
